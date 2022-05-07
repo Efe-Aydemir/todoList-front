@@ -7,12 +7,18 @@ template.innerHTML = `
 
 <style>
 #main {
-    width:600px;
     height:100px;
-    background-image: linear-gradient(to right,#5ADBFF,#3C6997);
-    border-radius:20px;
+    background-color: white;
+    border:1px black solid;
+    box-shadow:0 0 10px blue;
+    border-radius:15px 50px 30px;
+    transition:all 100ms;
 }
 
+#main:hover {
+    box-shadow:0 0 10px aqua;
+
+}
 ::-webkit-scrollbar {
     width: 5px;
   }
@@ -46,7 +52,7 @@ template.innerHTML = `
 
 </style>
 
-<div id='main' class='mx-auto m-3'>
+<div id='main' class='mx-auto m-3 w-75'>
     <div id='head'>
     <h1 class='header' class='display-6' id='labl'></h1>
     </div>
