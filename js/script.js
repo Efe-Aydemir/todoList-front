@@ -4,7 +4,8 @@ const inpt = document.querySelector('input')
 const card_grp = document.querySelector('#card-grp')
 
 addBtn.addEventListener('click', () => {
-    if (inpt.value) {
+    
+    if (inpt.value && inpt.value.trim().length !== 0) {
         let elem = document.createElement('td-card')
         card_grp.append(elem)
     } else {
